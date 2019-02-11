@@ -1,0 +1,152 @@
+[0211/060326.403370:INFO:logging.cc(257)] Starting ChromeDriver 73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017)
+[0211/060326.403448:INFO:logging.cc(258)] Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1549865006.404][SEVERE]: bind() failed: Cannot assign requested address (99)
+[1549865006.405][INFO]: listen on IPv6 failed with error ERR_ADDRESS_INVALID
+[1549865007.406][INFO]: [9e076caf267ad384c6e5d20e293a3604] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--no-sandbox" ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--no-sandbox" ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1549865007.407][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1549865007.407][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1549865007.407][INFO]: Launching chrome: /usr/bin/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/tmp/.com.google.Chrome.Zz1oXb/internal --log-level=0 --metrics-recording-only --no-first-run --no-sandbox --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.com.google.Chrome.oTfi9U data:,
+[1549865010.820][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1549865011.033][INFO]: [9e076caf267ad384c6e5d20e293a3604] RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017)",
+      "userDataDir": "/tmp/.com.google.Chrome.oTfi9U"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:42209"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1549865020.035][INFO]: [9e076caf267ad384c6e5d20e293a3604] COMMAND SetImplicitWait {
+   "ms": 3000.0,
+   "sessionId": "9e076caf267ad384c6e5d20e293a3604"
+}
+[1549865020.035][INFO]: [9e076caf267ad384c6e5d20e293a3604] RESPONSE SetImplicitWait
+[1549865024.692][INFO]: [9e076caf267ad384c6e5d20e293a3604] COMMAND Navigate {
+   "sessionId": "9e076caf267ad384c6e5d20e293a3604",
+   "url": "https://tora-net.sti.chubu.ac.jp/portal/top.do"
+}
+[1549865024.692][INFO]: Waiting for pending navigations...
+[1549865024.693][INFO]: Done waiting for pending navigations. Status: ok
+[1549865024.916][INFO]: Waiting for pending navigations...
+[1549865025.135][INFO]: Done waiting for pending navigations. Status: ok
+[1549865025.135][INFO]: [9e076caf267ad384c6e5d20e293a3604] RESPONSE Navigate
+[1549865029.282][INFO]: [9e076caf267ad384c6e5d20e293a3604] COMMAND GetTitle {
+
+}
+[1549865029.283][INFO]: Waiting for pending navigations...
+[1549865029.283][INFO]: Done waiting for pending navigations. Status: ok
+[1549865029.285][INFO]: Waiting for pending navigations...
+[1549865029.285][INFO]: Done waiting for pending navigations. Status: ok
+[1549865029.285][INFO]: [9e076caf267ad384c6e5d20e293a3604] RESPONSE GetTitle "Tora-Net Portal"
+[1549865032.950][INFO]: [9e076caf267ad384c6e5d20e293a3604] COMMAND GetSource {
+
+}
+[1549865032.950][INFO]: Waiting for pending navigations...
+[1549865032.950][INFO]: Done waiting for pending navigations. Status: ok
+[1549865032.953][INFO]: Waiting for pending navigations...
+[1549865032.953][INFO]: Done waiting for pending navigations. Status: ok
+[1549865032.953][INFO]: [9e076caf267ad384c6e5d20e293a3604] RESPONSE GetSource "\u003C!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\">\u003Chead>\n  ..."

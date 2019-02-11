@@ -1,0 +1,152 @@
+[0211/080748.109584:INFO:logging.cc(257)] Starting ChromeDriver 73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017)
+[0211/080748.109649:INFO:logging.cc(258)] Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1549872468.111][SEVERE]: bind() failed: Cannot assign requested address (99)
+[1549872468.111][INFO]: listen on IPv6 failed with error ERR_ADDRESS_INVALID
+[1549872469.115][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--no-sandbox", "--always-authorize-plugins", "--javascript-harmony", "--user-agent='Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Version/3.1 Safari/525.19'" ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--no-sandbox", "--always-authorize-plugins", "--javascript-harmony", "--user-agent='Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Version/3.1 Safari/525.19'" ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1549872469.115][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1549872469.115][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1549872469.116][INFO]: Launching chrome: /usr/bin/google-chrome --always-authorize-plugins --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --javascript-harmony --load-extension=/tmp/.com.google.Chrome.nKppVe/internal --log-level=0 --metrics-recording-only --no-first-run --no-sandbox --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-agent='Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Version/3.1 Safari/525.19' --user-data-dir=/tmp/.com.google.Chrome.RFNPjg data:,
+[1549872469.332][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1549872469.464][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017)",
+      "userDataDir": "/tmp/.com.google.Chrome.RFNPjg"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:41584"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1549872469.466][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] COMMAND SetImplicitWait {
+   "ms": 3000.0,
+   "sessionId": "8a4a43cbf1c153d3bfb482797d5169d0"
+}
+[1549872469.466][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] RESPONSE SetImplicitWait
+[1549872469.466][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] COMMAND Navigate {
+   "sessionId": "8a4a43cbf1c153d3bfb482797d5169d0",
+   "url": "https://tora-net.sti.chubu.ac.jp/portal/top.do"
+}
+[1549872469.466][INFO]: Waiting for pending navigations...
+[1549872469.471][INFO]: Done waiting for pending navigations. Status: ok
+[1549872470.803][INFO]: Waiting for pending navigations...
+[1549872471.001][INFO]: Done waiting for pending navigations. Status: ok
+[1549872471.001][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] RESPONSE Navigate
+[1549872471.002][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] COMMAND GetTitle {
+
+}
+[1549872471.002][INFO]: Waiting for pending navigations...
+[1549872471.003][INFO]: Done waiting for pending navigations. Status: ok
+[1549872471.004][INFO]: Waiting for pending navigations...
+[1549872471.005][INFO]: Done waiting for pending navigations. Status: ok
+[1549872471.005][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] RESPONSE GetTitle "Tora-Net Portal"
+[1549872471.006][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] COMMAND GetSource {
+
+}
+[1549872471.006][INFO]: Waiting for pending navigations...
+[1549872471.006][INFO]: Done waiting for pending navigations. Status: ok
+[1549872471.009][INFO]: Waiting for pending navigations...
+[1549872471.009][INFO]: Done waiting for pending navigations. Status: ok
+[1549872471.009][INFO]: [8a4a43cbf1c153d3bfb482797d5169d0] RESPONSE GetSource "\u003C!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\">\u003Chead>\n  ..."
