@@ -6,6 +6,7 @@
     - `https://sites.google.com/a/chromium.org/chromedriver/downloads`
         - this code works with ChromeDriver 73.0.3683.20(https://chromedriver.storage.googleapis.com/index.html?path=73.0.3683.20/)
     - download and set PATH `export PATH="$PATH:/path/to/chromedriver"`
+    - or just type `pip install chromedriver_binary`
 - libgconf2-4
 - libnss3-dev
 - google-chrome
