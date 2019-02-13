@@ -79,9 +79,8 @@ def getTimeTable():
 
     driver.quit()
     timeTable.append({"response" : response})
-    JSON = json.dumps(timeTable, ensure_ascii=False, indent=2)
-
-    return JSON
+    
+    return json.dumps(timeTable, ensure_ascii=False, indent=2)
 
 
 if __name__ == '__main__':
