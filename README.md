@@ -16,3 +16,7 @@
         apt-get update
         apt-get install google-chrome-stable
     ```
+
+# setup
+- setup gcloud to work `gcloud auth list`
+- just type `main.py app.yaml`
