@@ -1,11 +1,10 @@
 runtime: python37
 api_version: 1
-threadsafe: yes
 
 handlers:
 - url: /.*
   script: main.app
 
-libraries:
-- name: flask
-  version: 0.12
+  # script: ディレクティブは、Python のインポートパスです。たとえば、package.module.app は WSGI アプリケーションを参照します。
+  # Python モジュールパスを使用した script: ディレクティブの最後の要素は、モジュールのグローバル変数です。
+  # 変数は WSGI アプリである必要があり、その変数は WSGI アプリである必要があり、慣例により app という名前を付けます。
