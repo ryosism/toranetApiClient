@@ -16,6 +16,15 @@ def indexToDay(index):
 def indexToJigen(index):
     return jigen[int(index/6)]
 
+def loadPrivateData():
+    with open("privateData.json", "r") as f:
+        import pdb; pdb.set_trace()
+        JSON = json.load(f)
+        userId = JSON["userId"]
+        password = JSON["password"]
+
+        return userId, password
+
 def getTimeTable():
 
     options = webdriver.chrome.options.Options()
@@ -27,6 +36,7 @@ def getTimeTable():
     driver.implicitly_wait(1)
 
     # ログイン
+    userId, password = loadPrivateData()
     driver.get("https://tora-net.sti.chubu.ac.jp/portal/top.do")
     driver.find_element_by_id("userId").send_keys("tp00000")
     driver.find_element_by_id("password").send_keys("xxxxxxxx")
@@ -79,7 +89,7 @@ def getTimeTable():
 
     driver.quit()
     timeTable.append({"response" : response})
-    
+
     return json.dumps(timeTable, ensure_ascii=False, indent=2)
 
 
