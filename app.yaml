@@ -1,4 +1,7 @@
-runtime: python37
+runtime: custom
+env: flex
+manual_scaling:
+  instances: 1
 
 handlers:
 - url: /.*
