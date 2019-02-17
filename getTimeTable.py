@@ -1,4 +1,5 @@
 import io,sys
+from pathlib import Path
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
@@ -54,6 +55,13 @@ def getTimeTable():
 
     # htmlを取得
     soup = BeautifulSoup(driver.page_source, "lxml")
+
+    recievedHTMLPath = Path("./recievedHTML.txt")
+    if recievedHTMLPath.exists():
+        recievedHTMLPath.unlink()
+
+    with open("recievedHTML.txt", "w") as f:
+        f.write(str(soup.prettify()))
 
 
 
