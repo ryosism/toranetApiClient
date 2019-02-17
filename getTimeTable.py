@@ -37,8 +37,8 @@ def getTimeTable():
     # ログイン
     userId, password = loadPrivateData()
     driver.get("https://tora-net.sti.chubu.ac.jp/portal/top.do")
-    driver.find_element_by_id("userId").send_keys("tp00000")
-    driver.find_element_by_id("password").send_keys("xxxxxxxx")
+    driver.find_element_by_id("userId").send_keys(userId)
+    driver.find_element_by_id("password").send_keys(password)
     driver.find_element_by_xpath("//*[@id='loginButton']").click()
 
     # 時間割ページへ直接移動
