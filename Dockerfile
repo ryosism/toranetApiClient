@@ -2,15 +2,18 @@ FROM python:3.7
 
 WORKDIR /app
 ADD . /app
-ADD . /lib
 
 RUN apt-get update && apt-get install -y \
       wget \
       xz-utils
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 RUN apt-get update
-RUN apt-get install google-chrome-stable
-RUN pip install -i requirements.txt -t lib/
+RUN apt-get install -y google-chrome-stable
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8080
 
 CMD ["python", "main.py", "app.yaml"]
