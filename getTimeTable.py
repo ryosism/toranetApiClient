@@ -18,7 +18,6 @@ def indexToJigen(index):
 
 def loadPrivateData():
     with open("privateData.json", "r") as f:
-        import pdb; pdb.set_trace()
         JSON = json.load(f)
         userId = JSON["userId"]
         password = JSON["password"]
