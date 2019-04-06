@@ -16,4 +16,5 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
-CMD ["python", "main.py", "app.yaml"]
+# CMD ["python", "main.py", "app.yaml"]
+ENTRYPOINT gunicorn -b :$PORT main:app
