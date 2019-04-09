@@ -13,19 +13,31 @@
 # limitations under the License.
 
 # [START gae_python37_app]
-from flask import Flask
+from flask import Flask, request
+import urllib
 import getTimeTable
 
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return getTimeTable.getTimeTable()
+    return "hoge"
+
+
+@app.route('/timetable/', methods=['GET'])
+def get():
+    params = request.args
+    id = params.get('id')
+    passwd = params.get('passwd')
+    passwd = urllib.parse.unquote(passwd)
+
+    return getTimeTable.getTimeTable(id, passwd)
 
 
 if __name__ == '__main__':

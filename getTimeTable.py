@@ -25,8 +25,9 @@ def loadPrivateData():
 
         return userId, password
 
-def getTimeTable():
 
+
+def getTimeTable(id, passwd):
     options = webdriver.chrome.options.Options()
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
@@ -36,7 +37,7 @@ def getTimeTable():
     driver.implicitly_wait(1)
 
     # ログイン
-    userId, password = loadPrivateData()
+    userId, password = id, passwd
     driver.get("https://tora-net.sti.chubu.ac.jp/portal/top.do")
     driver.find_element_by_id("userId").send_keys(userId)
     driver.find_element_by_id("password").send_keys(password)
