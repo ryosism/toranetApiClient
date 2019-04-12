@@ -16,6 +16,8 @@
         apt-get update
         apt-get install google-chrome-stable
     ```
+    
+A Dockerfile builds compative environment. Just type `docker build .`
 
 # setup
 - setup gcloud to work `gcloud auth list`
